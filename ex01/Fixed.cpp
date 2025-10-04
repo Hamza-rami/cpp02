@@ -33,6 +33,14 @@ Fixed &Fixed::operator=(const Fixed &other)
     return *this;
 }
 
+
+std::ostream &operator<<(std::ostream &out, const Fixed &f)
+{
+    out << f.toFloat();
+    return out;
+}
+
+
 Fixed::~Fixed()
 {
     std::cout << "Destructor called\n";

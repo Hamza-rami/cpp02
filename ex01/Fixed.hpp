@@ -16,6 +16,7 @@ public:
     Fixed(const float var);
     Fixed(const Fixed &other);
     Fixed &operator=(const Fixed &other);
+    friend std::ostream &operator<<(std::ostream &out, const Fixed &f);
     ~Fixed();
 
     int toInt(void) const;
