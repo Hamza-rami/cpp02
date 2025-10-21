@@ -11,9 +11,10 @@ Point::Point(const Point &other) : x(other.getx()), y(other.gety())
 
 Point &Point::operator=(const Point &other) 
 { 
-    (void)other; 
-    return *this; 
+    (void)other;
+    return *this;
 }
+
 
 Point::~Point() 
 {}
@@ -26,3 +27,4 @@ Fixed Point::gety() const
 { 
     return y; 
 }
+
